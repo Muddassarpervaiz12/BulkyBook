@@ -1,0 +1,51 @@
+﻿@model  IEnumerable<Catogery>
+@{
+    ViewData["Title"] = "Catogery";
+}
+<div class="container p-2">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h4><i class="bi bi-list"></i> &nbsp; Category List</h4>
+        </div>
+        <div class="col-6 text-end">
+            <a class="btn btn-success" asp-controller="Catogeries" asp-action="Created"> <i class="bi bi-plus-circle"></i> &nbsp Add New Category</a>
+        </div>
+    </div>
+</div>
+<div class="container-xl">
+    <table class="table table-hover table table-bordered table-stripp">
+        <thead class="table-dark">
+            <tr>
+                <th style=" width: 20%">Id</th>
+                <th style=" width: 20%">Name</th>
+                <th style=" width: 20%">Display Orders</th>
+                <th style=" width: 20%">Date/Time</th>
+                <th style=" width: 50%"></th>
+            </tr>
+        </thead>
+        <tbody class="table-info">
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td style=" width: 20%">@obj.Id</td>
+                    <td style=" width: 20%">@obj.Name</td>
+                    <td style=" width: 20%">@obj.DisplayOrder</td>
+                    <td style=" width: 20%">@obj.CreatedDateTime</td>
+                    <td>
+
+
+                        <a type="submit" class="btn btn-success" asp-controller="Catogeries" asp-action="Edit" style="width:80px" asp-route-id="@obj.Id">
+                            Edit
+                        </a>
+                        &nbsp;
+                        <a type="submit" class="btn btn-primary" asp-controller="Catogeries" asp-action="Delete" style="width:80px" asp-route-id="@obj.Id">
+                            Delete
+                        </a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,32 @@
+﻿<div class="container p-2">
+<div class="row pt-4">
+        <div class="col-6">
+            <h4><i class="bi bi-list"></i> &nbsp; Product List</h4>
+        </div>
+    <div class="col-6 text-end">
+            <a class="btn btn-success" asp-controller="Product" asp-action="Upsert"> <i class="bi bi-plus-circle"></i> &nbsp Add New Product</a>
+    </div>
+    </div>
+</div>
+<div class="container-xl">
+    <table id="tblData" class="bg-gradient table table-hover table table-bordered table-stripp table-info">
+        <thead class="table-dark">
+        <tr >
+                <th style=" width: 15%">Title</th>
+                <th style=" width: 15%">ISBN</th> 
+                <th style=" width: 15%">Price</th>
+                <th style=" width: 15%">Author</th>
+                <th style=" width: 15%">Catogery</th>
+                <th style=" width: 15%">CoverType</th>
+                <th style=" width: 30%"></th>
+
+        </tr>
+    </thead>
+  
+</table>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/product.js"></script>
+}
