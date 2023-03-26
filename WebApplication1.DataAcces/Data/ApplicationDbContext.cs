@@ -13,6 +13,5 @@ public class ApplicationDbContext :DbContext
     public DbSet<Product> products { get; set; }
     public DbSet<Catogery> catogeries { get; set; }
     public DbSet<CoverType> coverTypes  { get; set; }
-    public DbSet<ApplicationUser> ApplicationUsers { get; set; }
     public DbSet<Company> Companies { get; set; }
 }
