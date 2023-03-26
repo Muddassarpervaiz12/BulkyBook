@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
 namespace WebApplication1.DataAcces;
-public class ApplicationDbContext :IdentityDbContext<ApplicationUser>
+public class ApplicationDbContext :DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) :base (options)
     {
