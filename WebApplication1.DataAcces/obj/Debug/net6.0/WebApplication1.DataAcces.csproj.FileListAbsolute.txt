@@ -1,0 +1,17 @@
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.AssemblyInfo.cs
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.DataAcces.deps.json
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.DataAcces.runtimeconfig.json
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.DataAcces.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.DataAcces.pdb
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.Models.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.Models.pdb
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.csproj.CopyComplete
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\refint\WebApplication1.DataAcces.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.pdb
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAcces.genruntimeconfig.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\ref\WebApplication1.DataAcces.dll

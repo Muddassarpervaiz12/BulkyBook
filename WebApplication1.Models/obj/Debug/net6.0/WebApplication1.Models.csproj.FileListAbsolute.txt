@@ -1,0 +1,12 @@
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\bin\Debug\net6.0\WebApplication1.Models.deps.json
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\bin\Debug\net6.0\WebApplication1.Models.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\bin\Debug\net6.0\WebApplication1.Models.pdb
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.csproj.AssemblyReference.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.AssemblyInfoInputs.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.AssemblyInfo.cs
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.csproj.CoreCompileInputs.cache
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\refint\WebApplication1.Models.dll
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\WebApplication1.Models.pdb
+C:\Users\Hp\source\repos\WebApplication1\WebApplication1.Models\obj\Debug\net6.0\ref\WebApplication1.Models.dll
