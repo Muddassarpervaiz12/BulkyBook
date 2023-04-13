@@ -12,6 +12,10 @@ namespace WebApplication1.DataAccess.Repository.IRepository
         ICoverTypeRepository CoverType { get;}
         ICategoryRepository Category { get;}
         ICompanyRepository Company { get;}
-        public void Save();
+        IApplicationUserRepository ApplicationUser { get;}
+        IShoppinCartRepository ShoppingCart { get;}
+		IOrderHeaderRepository OrderHeader { get; }
+		IOrderDetailRepository OrderDetail { get; }
+		public void Save();
     }
 }
