@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {}
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
         "projectName": "WebApplication1.Utility",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\obj\\",
+        "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
+        "packagesPath": "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al-Rehman Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

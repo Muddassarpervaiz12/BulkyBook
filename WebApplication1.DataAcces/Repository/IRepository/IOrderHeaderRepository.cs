@@ -13,6 +13,6 @@ namespace WebApplication1.DataAccess.Repository.IRepository
         //Update order status in which have id and order status and payment status, payment status is nullable 
         // because its possible we do not update payment status every time
         void UpdateStatus(int id, string orderStatus, string? paymentStatus = null);
-        
-    }
+		void UpdateStripePaymentId(int id, string sessionId, string paymentIntentId);
+	}
 }

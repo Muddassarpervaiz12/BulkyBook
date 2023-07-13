@@ -1,323 +1,335 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\StyleSheet.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\StyleSheet.css",
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\0c39c8ba-1bc1-4e98-9d42-45f429a590f1.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\lawn_leaf.jpg",
+      "PackagePath": "staticwebassets\\images\\lawn_leaf.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\0c39c8ba-1bc1-4e98-9d42-45f429a590f1.jpg",
       "PackagePath": "staticwebassets\\images\\product\\0c39c8ba-1bc1-4e98-9d42-45f429a590f1.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\2ad22098-ca3d-433b-803c-217e74ea232f.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\2ad22098-ca3d-433b-803c-217e74ea232f.png",
       "PackagePath": "staticwebassets\\images\\product\\2ad22098-ca3d-433b-803c-217e74ea232f.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\36a8077a-3d1d-42a7-b6bf-406119a9f96a.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\36a8077a-3d1d-42a7-b6bf-406119a9f96a.jpg",
       "PackagePath": "staticwebassets\\images\\product\\36a8077a-3d1d-42a7-b6bf-406119a9f96a.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\3cf33005-b703-4011-bb62-7a739ea53279.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\3cf33005-b703-4011-bb62-7a739ea53279.png",
       "PackagePath": "staticwebassets\\images\\product\\3cf33005-b703-4011-bb62-7a739ea53279.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\437f83d4-7e60-44e5-9d88-bf265320fa53.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\437f83d4-7e60-44e5-9d88-bf265320fa53.jpg",
       "PackagePath": "staticwebassets\\images\\product\\437f83d4-7e60-44e5-9d88-bf265320fa53.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\57ef65ed-81a8-4e18-bcb6-46089651137e.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\57ef65ed-81a8-4e18-bcb6-46089651137e.jpg",
       "PackagePath": "staticwebassets\\images\\product\\57ef65ed-81a8-4e18-bcb6-46089651137e.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\5c40a125-4723-491f-b318-3b25d530c3cf.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\5c40a125-4723-491f-b318-3b25d530c3cf.png",
       "PackagePath": "staticwebassets\\images\\product\\5c40a125-4723-491f-b318-3b25d530c3cf.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\5c794ea2-d0da-41b0-bef9-f1814b1281b6.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\5c794ea2-d0da-41b0-bef9-f1814b1281b6.png",
       "PackagePath": "staticwebassets\\images\\product\\5c794ea2-d0da-41b0-bef9-f1814b1281b6.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6c30a75f-cea7-4941-b661-9197bdcf4e44.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6c30a75f-cea7-4941-b661-9197bdcf4e44.png",
       "PackagePath": "staticwebassets\\images\\product\\6c30a75f-cea7-4941-b661-9197bdcf4e44.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6f084134-ce22-4dbd-80dd-4ac4951bbc1e.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6f084134-ce22-4dbd-80dd-4ac4951bbc1e.jpg",
       "PackagePath": "staticwebassets\\images\\product\\6f084134-ce22-4dbd-80dd-4ac4951bbc1e.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\98b9c5c7-ada3-4b34-bfa4-e0b1358bd51e.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\98b9c5c7-ada3-4b34-bfa4-e0b1358bd51e.png",
       "PackagePath": "staticwebassets\\images\\product\\98b9c5c7-ada3-4b34-bfa4-e0b1358bd51e.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\a4c07c74-1468-4185-8074-548b14fac1e7.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\a4c07c74-1468-4185-8074-548b14fac1e7.jpg",
       "PackagePath": "staticwebassets\\images\\product\\a4c07c74-1468-4185-8074-548b14fac1e7.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\c2063aef-da5d-4b39-a646-c1fde7033cbc.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\c2063aef-da5d-4b39-a646-c1fde7033cbc.jpg",
       "PackagePath": "staticwebassets\\images\\product\\c2063aef-da5d-4b39-a646-c1fde7033cbc.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\e9959de4-16a3-4e48-86c9-13292df99037.jpg",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\e9959de4-16a3-4e48-86c9-13292df99037.jpg",
       "PackagePath": "staticwebassets\\images\\product\\e9959de4-16a3-4e48-86c9-13292df99037.jpg"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\ea30cde3-22cc-4004-a24e-25319a755bac.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\ea30cde3-22cc-4004-a24e-25319a755bac.png",
       "PackagePath": "staticwebassets\\images\\product\\ea30cde3-22cc-4004-a24e-25319a755bac.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\eeb1e98e-f8b7-4554-b97d-312887ed4c03.png",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\eeb1e98e-f8b7-4554-b97d-312887ed4c03.png",
       "PackagePath": "staticwebassets\\images\\product\\eeb1e98e-f8b7-4554-b97d-312887ed4c03.png"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\company.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\company.js",
       "PackagePath": "staticwebassets\\js\\company.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\product.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\LICENSE_000.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE_000.md"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

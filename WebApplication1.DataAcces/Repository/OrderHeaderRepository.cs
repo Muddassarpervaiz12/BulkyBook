@@ -35,5 +35,15 @@ namespace WebApplication1.DataAccess.Repository
                 }
             }
 		}
+
+
+		public void UpdateStripePaymentId(int id, string sessionId, string paymentIntentId)
+		{
+			// match the id from database 
+			var orderFromDb = _db.OrderHeaders.FirstOrDefault(u => u.Id == id);
+            orderFromDb.PaymentDate = DateTime.Now;
+			orderFromDb.SessionId=sessionId;
+            orderFromDb.PaymentIntentId=paymentIntentId;
+		}
 	}
 }

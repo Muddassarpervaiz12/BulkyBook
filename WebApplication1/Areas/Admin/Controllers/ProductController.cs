@@ -24,6 +24,7 @@ namespace WebApplication1.Controllers
         //Get
         public IActionResult Upsert(int? id)
         {
+			//load the catogery and covertype list on the page
             ProductVM productVM = new()
             {
                 product = new(),

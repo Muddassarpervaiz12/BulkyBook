@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj": {
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj",
         "projectName": "WebApplication1.DataAccess",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\obj\\",
+        "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al-Rehman Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj": {
-                "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj"
+              "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj": {
+                "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj"
               }
             }
           }
@@ -83,21 +88,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj": {
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj",
         "projectName": "WebApplication1.Models",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Models\\obj\\",
+        "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj",
+        "packagesPath": "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al-Rehman Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,6 +114,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -148,21 +158,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
         "projectName": "WebApplication1.Utility",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\obj\\",
+        "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj",
+        "packagesPath": "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al-Rehman Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,6 +184,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -209,21 +224,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Al-Rehman Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,17 +250,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj"
+              "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj"
               },
-              "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
-                "projectPath": "C:\\Users\\Hp\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj"
+              "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
+                "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj"
               }
             }
           }
@@ -284,11 +305,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.13, )"
+              "version": "[6.0.14, )"
             },
             "Stripe.net": {
               "target": "Package",
-              "version": "[41.13.0, )"
+              "version": "[39.119.0, )"
             }
           },
           "imports": [
@@ -310,7 +331,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Stripe.Checkout;
+using System.Linq;
 using System.Security.Claims;
 using WebApplication1.DataAccess.Repository.IRepository;
 using WebApplication1.Models;
@@ -106,9 +107,7 @@ namespace WebApplication1.Areas.Customer.Controllers
             ShoppingCartVM.ListCart = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == claim.Value,
                 includeProperties: "Product");
 
-            //order status and payment status and time
-            ShoppingCartVM.OrderHeader.PaymentStatus=SD.PaymentStatusPending;
-            ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
+            // order time
             ShoppingCartVM.OrderHeader.OrderDate = System.DateTime.Now;
             ShoppingCartVM.OrderHeader.ApplicationUserId = claim.Value;
 
@@ -123,8 +122,23 @@ namespace WebApplication1.Areas.Customer.Controllers
 				ShoppingCartVM.OrderHeader.OrderTotal += (cart.Count * cart.Price);
 			}
 
-            //save the order header details into database
-            _unitOfWork.OrderHeader.Add(ShoppingCartVM.OrderHeader);
+			ApplicationUser applicationUser = _unitOfWork.ApplicationUser.GetFirstOrDefault(u => u.Id == claim.Value);
+           // check either user is from company or individual
+            if(applicationUser.CompanyId.GetValueOrDefault()== 0)
+            {
+				//order status and payment status
+				ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
+				ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
+			}
+            else
+            {
+
+				// order status and payment status
+				ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusDelayPayment;
+				ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusApproved;
+			}
+			//save the order header details into database
+			_unitOfWork.OrderHeader.Add(ShoppingCartVM.OrderHeader);
             _unitOfWork.Save();
 
 
@@ -137,61 +151,92 @@ namespace WebApplication1.Areas.Customer.Controllers
                     ProductId = cart.ProductId,
                     OrderId = ShoppingCartVM.OrderHeader.Id,
                     Price= cart.Price,  
-                    Count= cart.Count,
+                    Count= cart.Count
                 };
                 // save the details into database
                 _unitOfWork.OrderDetail.Add(orderDetail);
                 _unitOfWork.Save();
 			}
-
-
-
-            //stripe setting
-            var domain = "https://localhost:44392/";
-            // create session and add lineitems
-		 var options = new SessionCreateOptions
-         {
-                 PaymentMethodTypes= new List<string>
+            // check either user is company user or indivdual user
+            if (applicationUser.CompanyId.GetValueOrDefault() == null)
+            {
+                //stripe setting
+                var domain = "https://localhost:44392/";
+                // create session and add lineitems
+                var options = new SessionCreateOptions
+                {
+                    PaymentMethodTypes = new List<string>
                  {
                      "card",
                  },
-             LineItems = new List<SessionLineItemOptions>()
-            ,
-        Mode = "payment",
-        SuccessUrl = domain+$"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}",
-        CancelUrl = domain+$"customer/cart/index",
-      };
-      foreach (var item in ShoppingCartVM.ListCart)
-            {
-			var sessionLineItem = new SessionLineItemOptions
-			{
-				   PriceData = new SessionLineItemPriceDataOptions
-			{
-					  UnitAmount = (long)(item.Price*100),//20.00 -> 2000
-					  Currency = "usd",
-					 ProductData = new SessionLineItemPriceDataProductDataOptions
-			  {
-						Name = item.Product.Title,
-			  },
-			},
-			Quantity = item.Count,
-		  };
-                options.LineItems.Add(sessionLineItem);
-		
+                    LineItems = new List<SessionLineItemOptions>(),
+                    Mode = "payment",
+                    SuccessUrl = domain + $"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}",
+                    CancelUrl = domain + $"customer/cart/index",
+                };
+                foreach (var item in ShoppingCartVM.ListCart)
+                {
+                    var sessionLineItem = new SessionLineItemOptions
+                    {
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
+                            UnitAmount = (long)(item.Price * 100),//20.00 -> 2000
+                            Currency = "pkr",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = item.Product.Title,
+                            },
+                        },
+                        Quantity = item.Count,
+                    };
+                    options.LineItems.Add(sessionLineItem);
+
+                }
+                var service = new SessionService();
+                //in this we have session id and payment intent id so we save that ids into the unitofwork
+                Session session = service.Create(options);
+                ///updatestripepaymentId is a method use in orderheaderrepository
+                _unitOfWork.OrderHeader.UpdateStripePaymentId(ShoppingCartVM.OrderHeader.Id,
+                    session.Id, session.PaymentIntentId);
+                _unitOfWork.Save();
+                Response.Headers.Add("Location", session.Url);
+                //303 means redirect to stripe portal
+                return new StatusCodeResult(303);
             }
-      var service = new SessionService();
-      Session session = service.Create(options);
 
-      Response.Headers.Add("Location", session.Url);
-      return new StatusCodeResult(303);
-
-
-            //After all of this we will clear over shopping cart
-           //use removerang method to remove a collection
-          //_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartVM.ListCart);
-         //_unitOfWork.Save();
-		//return RedirectToAction("Index","Home");
+            else
+            {
+                return RedirectToAction("OrderConfirmation", "Cart", new { id= ShoppingCartVM.OrderHeader.Id});
+            }
 		}
+     
+        //this method is use for successurl 
+		public IActionResult OrderConfirmation(int id)
+		{
+			OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id);
+            //if user is individual and this if condition check
+            if (orderHeader.PaymentStatus != SD.PaymentStatusDelayPayment)
+            {
+                //get sessionid that was create in summarypost method
+                var service = new SessionService();
+                Session session = service.Get(orderHeader.SessionId);
+                //check the stripe status
+                if (session.PaymentStatus.ToLower() == "paid")
+                {
+					_unitOfWork.OrderHeader.UpdateStripePaymentId(id, orderHeader.SessionId, session.PaymentIntentId);
+					_unitOfWork.OrderHeader.UpdateStatus(id, SD.StatusApproved, SD.PaymentStatusApproved);
+                    _unitOfWork.Save();
+                }
+            }
+            //get the list of shoppingcart
+            List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+            //After all of this we will clear over shopping cart
+            //use removerang method to remove a collection
+            _unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
+            _unitOfWork.Save();
+            return View(id);
+        }
+
 
 		//Plus method in which we add more product when we click on plus button
 		public IActionResult Plus( int cartId)
@@ -202,7 +247,6 @@ namespace WebApplication1.Areas.Customer.Controllers
             _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
         }
-
 
 
         //Minus the product into the cart

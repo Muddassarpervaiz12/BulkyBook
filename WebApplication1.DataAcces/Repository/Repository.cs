@@ -44,9 +44,19 @@ namespace WebApplication1.DataAccess.Repository
             return query.ToList();
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = true)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if(tracked)
+            {
+                query = dbSet;
+            }
+            else
+            {
+                //due to this we do not tracking entity anymore
+                query = dbSet.AsNoTracking();
+            }
+            
             query=query.Where(filter);
             if (includeProperties != null)
             {
