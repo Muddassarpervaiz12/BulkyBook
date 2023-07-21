@@ -46,6 +46,19 @@
           }
         }
       },
+      "BouncyCastle.Cryptography/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -637,6 +650,22 @@
         "resource": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "MailKit/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MimeKit": "4.1.0"
+        },
+        "compile": {
+          "lib/net6.0/MailKit.dll": {
+            "related": ".dll.config;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MailKit.dll": {
+            "related": ".dll.config;.pdb;.xml"
           }
         }
       },
@@ -1845,7 +1874,7 @@
           }
         }
       },
-      "Microsoft.DotNet.Scaffolding.Shared/6.0.14": {
+      "Microsoft.DotNet.Scaffolding.Shared/6.0.15": {
         "type": "package",
         "dependencies": {
           "Humanizer": "2.14.1",
@@ -2546,11 +2575,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration/6.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "6.0.14",
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "6.0.15",
           "System.Collections.Immutable": "6.0.0"
         },
         "compile": {
@@ -2564,11 +2593,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "6.0.14",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "6.0.15",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -2582,11 +2611,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.14",
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "6.0.14"
+          "Microsoft.DotNet.Scaffolding.Shared": "6.0.15",
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "6.0.15"
         },
         "compile": {
           "lib/net6.0/dotnet-aspnet-codegenerator-design.dll": {
@@ -2599,11 +2628,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.14",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "6.0.14"
+          "Microsoft.DotNet.Scaffolding.Shared": "6.0.15",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "6.0.15"
         },
         "compile": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
@@ -2616,13 +2645,13 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/6.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "6.0.0",
           "Microsoft.CodeAnalysis.CSharp": "4.0.0",
           "Microsoft.CodeAnalysis.Razor": "6.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "6.0.14"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "6.0.15"
         },
         "compile": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {
@@ -2635,12 +2664,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/6.0.15": {
         "type": "package",
         "dependencies": {
           "Microsoft.Build": "17.3.2",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.0.0",
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.14",
+          "Microsoft.DotNet.Scaffolding.Shared": "6.0.15",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -2654,11 +2683,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.14": {
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.15": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "6.0.14",
-          "Microsoft.VisualStudio.Web.CodeGeneration": "6.0.14"
+          "Microsoft.DotNet.Scaffolding.Shared": "6.0.15",
+          "Microsoft.VisualStudio.Web.CodeGeneration": "6.0.15"
         },
         "compile": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {
@@ -2728,6 +2757,25 @@
           "runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "MimeKit/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.2.1",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Security.Cryptography.Pkcs": "7.0.2",
+          "System.Text.Encoding.CodePages": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MimeKit.dll": {
+            "related": ".dll.config;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MimeKit.dll": {
+            "related": ".dll.config;.pdb;.xml"
           }
         }
       },
@@ -3490,17 +3538,20 @@
           }
         }
       },
-      "System.Formats.Asn1/5.0.0": {
+      "System.Formats.Asn1/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/_._": {
+          "lib/net6.0/System.Formats.Asn1.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Formats.Asn1.dll": {
+          "lib/net6.0/System.Formats.Asn1.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -4323,24 +4374,26 @@
           }
         }
       },
-      "System.Security.Cryptography.Pkcs/5.0.0": {
+      "System.Security.Cryptography.Pkcs/7.0.2": {
         "type": "package",
         "dependencies": {
-          "System.Formats.Asn1": "5.0.0",
-          "System.Security.Cryptography.Cng": "5.0.0"
+          "System.Formats.Asn1": "7.0.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
         "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -4502,7 +4555,7 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/6.0.0": {
+      "System.Text.Encoding.CodePages/7.0.0": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
@@ -4518,7 +4571,7 @@
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
           "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
@@ -4774,7 +4827,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.UI": "6.0.15"
+          "MailKit": "4.1.0",
+          "Microsoft.AspNetCore.Identity.UI": "6.0.15",
+          "MimeKit": "4.1.0"
         },
         "compile": {
           "bin/placeholder/WebApplication1.Utility.dll": {}
@@ -4822,6 +4877,26 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "BouncyCastle.Cryptography/2.2.1": {
+      "sha512": "A6Zr52zVqJKt18ZBsTnX0qhG0kwIQftVAjLmszmkiR/trSp8H+xj1gUOzk7XHwaKgyREMSV1v9XaKrBUeIOdvQ==",
+      "type": "package",
+      "path": "bouncycastle.cryptography/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bouncycastle.cryptography.2.2.1.nupkg.sha512",
+        "bouncycastle.cryptography.nuspec",
+        "lib/net461/BouncyCastle.Cryptography.dll",
+        "lib/net461/BouncyCastle.Cryptography.xml",
+        "lib/net6.0/BouncyCastle.Cryptography.dll",
+        "lib/net6.0/BouncyCastle.Cryptography.xml",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
+        "packageIcon.png"
       ]
     },
     "Humanizer/2.14.1": {
@@ -5568,6 +5643,42 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "MailKit/4.1.0": {
+      "sha512": "m/G6LiMdu0it09rcZWaK9YtRqoc2/Xhv3+7kbCApEz1sZlK2IihWvfsf1IEWTswy5GmvWrtmh6QSdTyg5MIXgg==",
+      "type": "package",
+      "path": "mailkit/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icons/mailkit-50.png",
+        "lib/net462/MailKit.dll",
+        "lib/net462/MailKit.dll.config",
+        "lib/net462/MailKit.pdb",
+        "lib/net462/MailKit.xml",
+        "lib/net47/MailKit.dll",
+        "lib/net47/MailKit.dll.config",
+        "lib/net47/MailKit.pdb",
+        "lib/net47/MailKit.xml",
+        "lib/net48/MailKit.dll",
+        "lib/net48/MailKit.dll.config",
+        "lib/net48/MailKit.pdb",
+        "lib/net48/MailKit.xml",
+        "lib/net6.0/MailKit.dll",
+        "lib/net6.0/MailKit.dll.config",
+        "lib/net6.0/MailKit.pdb",
+        "lib/net6.0/MailKit.xml",
+        "lib/netstandard2.0/MailKit.dll",
+        "lib/netstandard2.0/MailKit.dll.config",
+        "lib/netstandard2.0/MailKit.pdb",
+        "lib/netstandard2.0/MailKit.xml",
+        "lib/netstandard2.1/MailKit.dll",
+        "lib/netstandard2.1/MailKit.dll.config",
+        "lib/netstandard2.1/MailKit.pdb",
+        "lib/netstandard2.1/MailKit.xml",
+        "mailkit.4.1.0.nupkg.sha512",
+        "mailkit.nuspec"
       ]
     },
     "MessagePack/2.1.152": {
@@ -6850,17 +6961,17 @@
         "microsoft.diasymreader.nuspec"
       ]
     },
-    "Microsoft.DotNet.Scaffolding.Shared/6.0.14": {
-      "sha512": "8SfkmlTJNODUxU4Oqp1zGq++XnSLd/Ow/gHeJntlIYHLZelXBkWTnBnfUoPTBh5WJWH9xbrhL4MydwuXqIVZuw==",
+    "Microsoft.DotNet.Scaffolding.Shared/6.0.15": {
+      "sha512": "an0dayFSTaVn4JQ0FSwWScj5NooqsP6h+MEJi4+4lm242/AHcE6MRSF7cONwL+dTy2ON9nH5z5jXaYMdy/OS9g==",
       "type": "package",
-      "path": "microsoft.dotnet.scaffolding.shared/6.0.14",
+      "path": "microsoft.dotnet.scaffolding.shared/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll",
         "lib/net6.0/Microsoft.DotNet.Scaffolding.Shared.xml",
-        "microsoft.dotnet.scaffolding.shared.6.0.14.nupkg.sha512",
+        "microsoft.dotnet.scaffolding.shared.6.0.15.nupkg.sha512",
         "microsoft.dotnet.scaffolding.shared.nuspec"
       ]
     },
@@ -7751,38 +7862,38 @@
         "microsoft.visualstudio.debugger.contracts.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration/6.0.14": {
-      "sha512": "HaJ62Um+f2C/94kghlaEsEijFyVYzcqlbomMq8Dsr7WsAcQQM+4UKlzG2fw7hluQ04ncW5/3WmBRKdsFuFBa7A==",
+    "Microsoft.VisualStudio.Web.CodeGeneration/6.0.15": {
+      "sha512": "ClHZ24tIPcIGvzvFTmhCN8AQkNsFmsilFb+bb6nwG4kmnDreAq6Tf5/k/C2U7/e2M8XIZ47K8ao51z1p0pu0TQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.xml",
-        "microsoft.visualstudio.web.codegeneration.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.14": {
-      "sha512": "P9bqFgz+Iz4hlWr6XgozN3RApvJg0/3qziuySrxvpkDsB3mb4rwLAgwWjS0lvU7PndXupEkzdBwnPsMvB7qiGA==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Core/6.0.15": {
+      "sha512": "a53ihmzBwehBXLxdK0BL4i9zODuuJ1l6WEvQeJ6slEEq/ndJaf3jDdiW1h1Kt8DLTY9Ip7Fkux0xJUbajPjXnQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.core/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration.core/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml",
-        "microsoft.visualstudio.web.codegeneration.core.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.core.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.core.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.14": {
-      "sha512": "ZN6QtTeg0Z6lNqNdJfSCxPiJnzjaYZCP/TkV9wIAtgqXWmk+kxgGE+DovekpapJGMRQBWVrzGgfEyE3k5Cm8ZA==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.15": {
+      "sha512": "VkcEXHEfAzkRQNQUYRp4rtV2OgzgtQkfP/aXCIt0UEBcuTdVHnEGgJFXYij+fluEOZmYZUWH/F0JSMQFnG2B0g==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.design/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration.design/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7790,14 +7901,14 @@
         "README.md",
         "lib/net6.0/dotnet-aspnet-codegenerator-design.dll",
         "lib/net6.0/dotnet-aspnet-codegenerator-design.xml",
-        "microsoft.visualstudio.web.codegeneration.design.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.design.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.design.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.14": {
-      "sha512": "9uS5u8k9s8bPt/tLQWDwF8yjeOPzyN1gYJRHUSZDa2T6liZI/GZWs+xeJSfBLowlcS2y+VXZmmy8VWgStazdTQ==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/6.0.15": {
+      "sha512": "S72d5CeMW60jL7ZvYszj0YzJPBQXbg1vEB4Hn9wAeyj0Q3OEzpCuesywvxQTpiUC1/+M/XLWwCbDAn+JP/L5SQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7806,42 +7917,42 @@
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.runtimeconfig.json",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.xml",
-        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/6.0.14": {
-      "sha512": "HQ80nndrSbc5b04PG+OHptq2puUN4uz3BE+MZlPRBeVUV1K8rdlzQ9fomcnGe9fseTLTX2RCwiMwwEUiWfCiCA==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/6.0.15": {
+      "sha512": "/Jj51BARTe6SdOiaLFmHzZTzjbVdzkVvo1enmpHeXe4SAX8FcNLULTkG518cwpIOVKh0vmHz+F8/9oq+qPRJ5w==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.templating/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration.templating/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml",
-        "microsoft.visualstudio.web.codegeneration.templating.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.templating.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.templating.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/6.0.14": {
-      "sha512": "IUBqNfClCnrzWzo2l4piB9HJTMV4FMhIQdyb7dtw6hrxgUT4oUXc1ySB7XDNfDclIDP/OLt/TKqG0jA0S0TWkw==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/6.0.15": {
+      "sha512": "dUlZnRJjONMmPhRA+HxePNUyMNCcF4Z7E5iWfN5eai5nXiT/mx2FkantGtLlOkY9E3mr8tXfFkqMyGRyj/iYYw==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.utils/6.0.14",
+      "path": "microsoft.visualstudio.web.codegeneration.utils/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll",
         "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml",
-        "microsoft.visualstudio.web.codegeneration.utils.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.utils.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.utils.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.14": {
-      "sha512": "iWlCz0sAr8pSsxY/X1Xb9KPexi0zijmPIfOmFRTIBnrarMqv8tao1JQj9sYz6c2v4un2zBlky0UkR3jO/IrXHg==",
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/6.0.15": {
+      "sha512": "vtkBl+7UbraVYEIYCuYhXKwUFS+/DNgaPoTyULJgsIMTk8uL7V2pXctDGXgIp/iPrBt9ESxGwWHsttrLgf1hDQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegenerators.mvc/6.0.14",
+      "path": "microsoft.visualstudio.web.codegenerators.mvc/6.0.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8308,7 +8419,7 @@
         "lib/net6.0/bootstrap5_identitygeneratorfilesconfig.json",
         "lib/net6.0/identityMinimalHostingChanges.json",
         "lib/net6.0/minimalApiChanges.json",
-        "microsoft.visualstudio.web.codegenerators.mvc.6.0.14.nupkg.sha512",
+        "microsoft.visualstudio.web.codegenerators.mvc.6.0.15.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
       ]
     },
@@ -8417,6 +8528,42 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "MimeKit/4.1.0": {
+      "sha512": "JUIaZfYybdRcyt1wgPo1e2j4aI3Rp8USKpxka1WImUs17+2X3Xl0sDJYfbzFchJ46qZeSvIwL+/aAjxPtFsm4A==",
+      "type": "package",
+      "path": "mimekit/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icons/mimekit-50.png",
+        "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.dll.config",
+        "lib/net462/MimeKit.pdb",
+        "lib/net462/MimeKit.xml",
+        "lib/net47/MimeKit.dll",
+        "lib/net47/MimeKit.dll.config",
+        "lib/net47/MimeKit.pdb",
+        "lib/net47/MimeKit.xml",
+        "lib/net48/MimeKit.dll",
+        "lib/net48/MimeKit.dll.config",
+        "lib/net48/MimeKit.pdb",
+        "lib/net48/MimeKit.xml",
+        "lib/net6.0/MimeKit.dll",
+        "lib/net6.0/MimeKit.dll.config",
+        "lib/net6.0/MimeKit.pdb",
+        "lib/net6.0/MimeKit.xml",
+        "lib/netstandard2.0/MimeKit.dll",
+        "lib/netstandard2.0/MimeKit.dll.config",
+        "lib/netstandard2.0/MimeKit.pdb",
+        "lib/netstandard2.0/MimeKit.xml",
+        "lib/netstandard2.1/MimeKit.dll",
+        "lib/netstandard2.1/MimeKit.dll.config",
+        "lib/netstandard2.1/MimeKit.pdb",
+        "lib/netstandard2.1/MimeKit.xml",
+        "mimekit.4.1.0.nupkg.sha512",
+        "mimekit.nuspec"
       ]
     },
     "Mono.TextTemplating/2.2.1": {
@@ -9678,24 +9825,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Formats.Asn1/5.0.0": {
-      "sha512": "MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
+    "System.Formats.Asn1/7.0.0": {
+      "sha512": "+nfpV0afLmvJW8+pLlHxRjz3oZJw4fkyU9MMEaMhCsHi/SN9bGF9q79ROubDiwTiCHezmK0uCWkPP7tGFP/4yg==",
       "type": "package",
-      "path": "system.formats.asn1/5.0.0",
+      "path": "system.formats.asn1/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Formats.Asn1.dll",
-        "lib/net461/System.Formats.Asn1.xml",
+        "buildTransitive/net461/System.Formats.Asn1.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets",
+        "lib/net462/System.Formats.Asn1.dll",
+        "lib/net462/System.Formats.Asn1.xml",
+        "lib/net6.0/System.Formats.Asn1.dll",
+        "lib/net6.0/System.Formats.Asn1.xml",
+        "lib/net7.0/System.Formats.Asn1.dll",
+        "lib/net7.0/System.Formats.Asn1.xml",
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
-        "system.formats.asn1.5.0.0.nupkg.sha512",
+        "system.formats.asn1.7.0.0.nupkg.sha512",
         "system.formats.asn1.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Globalization/4.3.0": {
@@ -11874,54 +12028,37 @@
         "system.security.cryptography.openssl.nuspec"
       ]
     },
-    "System.Security.Cryptography.Pkcs/5.0.0": {
-      "sha512": "9TPLGjBCGKmNvG8pjwPeuYy0SMVmGZRwlTZvyPHDbYv/DRkoeumJdfumaaDNQzVGMEmbWtg07zUpSW9q70IlDQ==",
+    "System.Security.Cryptography.Pkcs/7.0.2": {
+      "sha512": "xhFNJOcQSWhpiVGLLBQYoxAltQSQVycMkwaX1z7I7oEdT9Wr0HzSM1yeAbfoHaERIYd5s6EpLSOLs2qMchSKlA==",
       "type": "package",
-      "path": "system.security.cryptography.pkcs/5.0.0",
+      "path": "system.security.cryptography.pkcs/7.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net46/System.Security.Cryptography.Pkcs.dll",
-        "lib/net461/System.Security.Cryptography.Pkcs.dll",
-        "lib/net461/System.Security.Cryptography.Pkcs.xml",
-        "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll",
-        "lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.xml",
-        "lib/netstandard1.3/System.Security.Cryptography.Pkcs.dll",
+        "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "lib/net462/System.Security.Cryptography.Pkcs.dll",
+        "lib/net462/System.Security.Cryptography.Pkcs.xml",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "ref/net46/System.Security.Cryptography.Pkcs.dll",
-        "ref/net461/System.Security.Cryptography.Pkcs.dll",
-        "ref/net461/System.Security.Cryptography.Pkcs.xml",
-        "ref/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll",
-        "ref/netcoreapp2.1/System.Security.Cryptography.Pkcs.xml",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "ref/netcoreapp3.0/System.Security.Cryptography.Pkcs.xml",
-        "ref/netstandard1.3/System.Security.Cryptography.Pkcs.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
-        "ref/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
-        "ref/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
-        "ref/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/net46/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netcoreapp3.0/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
-        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
-        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.5.0.0.nupkg.sha512",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.7.0.2.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
@@ -12217,41 +12354,39 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/6.0.0": {
-      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+    "System.Text.Encoding.CodePages/7.0.0": {
+      "sha512": "LSyCblMpvOe0N3E+8e0skHcrIhgV2huaNcjUUEa8hRtgEAm36aGkRoC8Jxlb6Ra6GSfF29ftduPNywin8XolzQ==",
       "type": "package",
-      "path": "system.text.encoding.codepages/6.0.0",
+      "path": "system.text.encoding.codepages/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
-        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/net462/System.Text.Encoding.CodePages.dll",
+        "lib/net462/System.Text.Encoding.CodePages.xml",
         "lib/net6.0/System.Text.Encoding.CodePages.dll",
         "lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
-        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "lib/net7.0/System.Text.Encoding.CodePages.dll",
+        "lib/net7.0/System.Text.Encoding.CodePages.xml",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
+        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.7.0.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -12955,7 +13090,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.0-preview.2.23128.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0-preview.2.23128.3",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.14",
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.15",
       "Stripe.net >= 39.119.0",
       "WebApplication1.DataAccess >= 1.0.0",
       "WebApplication1.Utility >= 1.0.0"
@@ -13042,7 +13177,7 @@
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[6.0.14, )"
+            "version": "[6.0.15, )"
           },
           "Stripe.net": {
             "target": "Package",

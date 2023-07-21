@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebApplication1.DataAccess.Repository.IRepository;
 using WebApplication1.Models;
 using WebApplication1.Models.ViewModels;
+using WebApplication1.Utility;
 
 namespace WebApplication1.Controllers
 {
     [Area("Admin")]
-    public class CompanyController : Controller
+	[Authorize(Roles = SD.Role_Admin)]
+	public class CompanyController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
         public CompanyController(IUnitOfWork unitOfWork)

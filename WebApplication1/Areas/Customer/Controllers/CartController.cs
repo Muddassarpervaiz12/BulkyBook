@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -17,13 +18,15 @@ namespace WebApplication1.Areas.Customer.Controllers
     public class CartController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IEmailSender _emailSender;
         //This peoperty is use for price total that was add. and display total price on cartcontroller/indexpage
         // public int OrderTotal { get; set; }
         [BindProperty]
         public ShoppingCartVM ShoppingCartVM { get; set; }
-        public CartController(IUnitOfWork unitOfWork)
+        public CartController(IUnitOfWork unitOfWork, IEmailSender emailSender)
         {
             _unitOfWork = unitOfWork;
+            _emailSender = emailSender;
         }
 
         public IActionResult Index()
@@ -209,11 +212,11 @@ namespace WebApplication1.Areas.Customer.Controllers
                 return RedirectToAction("OrderConfirmation", "Cart", new { id= ShoppingCartVM.OrderHeader.Id});
             }
 		}
-     
-        //this method is use for successurl 
+
+		//this method is use for successurl=domain + $"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}"
 		public IActionResult OrderConfirmation(int id)
 		{
-			OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id);
+			OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == id,includeProperties: " ApplicationUser");
             //if user is individual and this if condition check
             if (orderHeader.PaymentStatus != SD.PaymentStatusDelayPayment)
             {
@@ -228,6 +231,8 @@ namespace WebApplication1.Areas.Customer.Controllers
                     _unitOfWork.Save();
                 }
             }
+            //send email to user that order is confirm
+            _emailSender.SendEmailAsync(orderHeader.ApplicationUser.Email, "New Order","<p>New Order Created</p>");
             //get the list of shoppingcart
             List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
             //After all of this we will clear over shopping cart

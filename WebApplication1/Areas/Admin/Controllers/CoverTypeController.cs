@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApplication1.DataAcces;
 using WebApplication1.DataAccess.Repository.IRepository;
 using WebApplication1.Models;
+using WebApplication1.Utility;
 
 namespace WebApplication1.Controllers
 {
     [Area("Admin")]
-    public class CoverTypeController : Controller
+	[Authorize(Roles = SD.Role_Admin)]
+	public class CoverTypeController : Controller
     {
       private readonly IUnitOfWork _unitOfWork;
         public CoverTypeController(IUnitOfWork unitOfWork)

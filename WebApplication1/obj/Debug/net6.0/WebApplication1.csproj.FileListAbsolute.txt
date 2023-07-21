@@ -722,7 +722,6 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Deb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Drawing.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Drawing.Primitives.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Dynamic.Runtime.dll
-C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Formats.Asn1.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Globalization.Calendars.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Globalization.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Globalization.Extensions.dll
@@ -811,7 +810,6 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Deb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Security.SecureString.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.ServiceModel.Web.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.ServiceProcess.dll
-C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Text.Encoding.CodePages.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Text.Encoding.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Text.Encoding.Extensions.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\refs\System.Text.RegularExpressions.dll
@@ -1119,3 +1117,11 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\obj\Deb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\MailKit.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Stripe;
+using Stripe.Checkout;
 using System.Diagnostics;
 using System.Security.Claims;
 using WebApplication1.DataAccess.Repository.IRepository;
@@ -11,7 +12,7 @@ using WebApplication1.Utility;
 namespace WebApplication1.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	//use for logged user
+	//here use authorize because only authorize user can view order details, make payment 
 	[Authorize]
 	public class OrderController : Controller
 	{
@@ -37,6 +38,83 @@ namespace WebApplication1.Areas.Admin.Controllers
             return View(OrderVM);
         }
 
+		//Deatils for Pay Now button
+		[ActionName("Details")]
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public IActionResult Details_PAY_NOW()
+		{
+			//retrive order header and order details with the help of orderviewmodel when click on pay now button
+			//and that button is only for company user
+			OrderVM.orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == OrderVM.orderHeader.Id, includeProperties: "ApplicationUser");
+			OrderVM.OrderDetail = _unitOfWork.OrderDetail.GetAll(u => u.OrderId == OrderVM.orderHeader.Id, includeProperties: "Product");
+
+			//Now process of payment with stripe
+			//stripe setting
+			var domain = "https://localhost:44392/";
+			// create session and add lineitems
+			var options = new SessionCreateOptions
+			{
+				PaymentMethodTypes = new List<string>
+				 {
+					 "card",
+				 },
+				LineItems = new List<SessionLineItemOptions>(),
+				Mode = "payment",
+				SuccessUrl = domain + $"admin/order/PaymentConfirmation?orderHeaderid={OrderVM.orderHeader.Id}",
+				CancelUrl = domain + $"admin/order/details?orderId={OrderVM.orderHeader.Id}",
+			};
+			foreach (var item in OrderVM.OrderDetail)
+			{
+				var sessionLineItem = new SessionLineItemOptions
+				{
+					PriceData = new SessionLineItemPriceDataOptions
+					{
+						UnitAmount = (long)(item.Price * 100),//20.00 -> 2000
+						Currency = "pkr",
+						ProductData = new SessionLineItemPriceDataProductDataOptions
+						{
+							Name = item.Product.Title,
+						},
+					},
+					Quantity = item.Count,
+				};
+				options.LineItems.Add(sessionLineItem);
+
+			}
+			var service = new SessionService();
+			//in this we have session id and payment intent id so we save that ids into the unitofwork
+			Session session = service.Create(options);
+			///updatestripepaymentId is a method use in orderheaderrepository
+			_unitOfWork.OrderHeader.UpdateStripePaymentId(OrderVM.orderHeader.Id,
+				session.Id, session.PaymentIntentId);
+			_unitOfWork.Save();
+			Response.Headers.Add("Location", session.Url);
+			//303 means redirect to stripe portal
+			return new StatusCodeResult(303);
+		}
+
+		//this method is use for successurl=domain + $"admin/order/PaymentConfirmation?orderHeaderid={OrderVM.orderHeader.Id}"
+		public IActionResult PaymentConfirmation(int orderHeaderid)
+		{
+			OrderHeader orderHeader = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == orderHeaderid);
+			//if user is individual and this if condition check
+			if (orderHeader.PaymentStatus == SD.PaymentStatusDelayPayment)
+			{
+				//get sessionid that was create in summarypost method
+				var service = new SessionService();
+				Session session = service.Get(orderHeader.SessionId);
+				//check the stripe status
+				if (session.PaymentStatus.ToLower() == "paid")
+				{
+					_unitOfWork.OrderHeader.UpdateStripePaymentId(orderHeaderid, orderHeader.SessionId, session.PaymentIntentId);
+					//so only payment status is change and become approve
+					_unitOfWork.OrderHeader.UpdateStatus(orderHeaderid, orderHeader.OrderStatus, SD.PaymentStatusApproved);
+					_unitOfWork.Save();
+				}
+			}
+			return View(orderHeaderid);
+		}
 
 		//update order details
 		[HttpPost]
