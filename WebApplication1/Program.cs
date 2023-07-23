@@ -25,7 +25,14 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProvid
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
 builder.Services.AddRazorPages();
-// path when we click on add to cart button then do not open page so use this to redirect to login/logout and signup pages
+//facebook login 
+builder.Services.AddAuthentication().AddFacebook(options =>
+{
+    options.AppId = "1108889100088637";
+    options.AppSecret = "fc6b8e0529be0c437327bf2137e841c3";
+});
+// path when we click on add to cart button then do not open page so use this to
+// redirect to login/logout and signup pages
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = $"/Identity/Account/Login";
