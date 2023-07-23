@@ -28,8 +28,8 @@ builder.Services.AddRazorPages();
 //facebook login 
 builder.Services.AddAuthentication().AddFacebook(options =>
 {
-    options.AppId = "1108889100088637";
-    options.AppSecret = "fc6b8e0529be0c437327bf2137e841c3";
+    options.AppId = builder.Configuration["Authentication:Facebook:AppId"];
+    options.AppSecret = builder.Configuration["Authentication:Facebook:AppSecret"];
 });
 // path when we click on add to cart button then do not open page so use this to
 // redirect to login/logout and signup pages
