@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
 using WebApplication1.DataAccess.Repository.IRepository;
 using WebApplication1.Models;
+using WebApplication1.Utility;
 
 namespace WebApplication1.Areas.Customer.Controllers
 {
@@ -50,12 +52,19 @@ namespace WebApplication1.Areas.Customer.Controllers
             if (cardFromDb == null)
             {
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                //here we add our session when we are adding item to the shopping cart database
+                //method called SetInt32 set someting for our session
+                ////use SD.SessionCart for key and value is number of items in shoppingcart
+                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoppingCart.GetAll
+                    (u => u.ApplicationUserId == claim.Value).ToList().Count);
             }
             else
             {
                 _unitOfWork.ShoppingCart.IncrementCount(cardFromDb, shoppingCart.Count);
+                _unitOfWork.Save();
             }
-            _unitOfWork.Save();
+            
             return RedirectToAction(nameof(Index));
         }
 

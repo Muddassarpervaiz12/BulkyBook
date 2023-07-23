@@ -1,4 +1,7 @@
-﻿@using WebApplication1.Utility;
+﻿@using Microsoft.AspNetCore.Http; 
+@using WebApplication1.Utility;
+@*use for httpcontext to display session*@
+@inject IHttpContextAccessor HttpContextAccessor;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,9 +52,32 @@
                                 Manage Order
                             </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index"><i class="bi bi-cart"></i></a>
+                            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                              @*  here we call invokeasync method and call shoppingCart*@
+                                @await Component.InvokeAsync("ShoppingCart")
+                            </a>
                         </li>
+                       @*check that if the session is null or not, we only set session id when we add to cart
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.SessionCart) != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                    <i class="bi bi-cart"></i> &nbsp;
+                                    (@HttpContextAccessor.HttpContext.Session.GetInt32(SD.SessionCart))
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                                    <i class="bi bi-cart"></i> &nbsp;
+                                    (0)
+                                </a>
+                            </li>
+                        }*@
                     </ul>
                     <partial name="_LoginPartial"> </partial>
                     @*<form class="d-flex">

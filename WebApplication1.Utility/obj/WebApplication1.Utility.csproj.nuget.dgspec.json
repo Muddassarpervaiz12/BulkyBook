@@ -56,6 +56,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[4.1.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
             }
           },
           "imports": [

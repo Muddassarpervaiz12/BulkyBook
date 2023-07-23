@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K0JDAqNpco27y6QzPAd4IfxzZWWqWlqzvylh339uQOT7jynhjUP2QM41K84Oz9DYBw/cI3VWBacoDpuwt1sCsA==",
+  "dgSpecHash": "GDqA7n9U+ybxJjCn8zvdiFH5QqCcslrBiju3nQawCqfNNXXG3NGG9Zt1EtX2nmQ9uGLAEQ9wK/8qLC8VnZDXnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
@@ -64,6 +64,7 @@
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.0-rc.1.21452.15\\microsoft.aspnetcore.authentication.facebook.6.0.0-rc.1.21452.15.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
@@ -191,6 +192,8 @@
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\sendgrid\\9.28.1\\sendgrid.9.28.1.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\stripe.net\\39.119.0\\stripe.net.39.119.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",

@@ -264,7 +264,12 @@ namespace WebApplication1.Areas.Customer.Controllers
             if (cart.Count <=1)
             {
 				_unitOfWork.ShoppingCart.Remove(cart);
-			}
+                //use for update session 
+                //use here becuase if we minus here we delete item from shopping cart 
+                //because count<=1
+                var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count-1;
+                HttpContext.Session.SetInt32(SD.SessionCart, count);
+            }
             else { 
                 _unitOfWork.ShoppingCart.DecrementCount(cart, 1);
                 }
@@ -281,6 +286,9 @@ namespace WebApplication1.Areas.Customer.Controllers
 			var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(x => x.Id == cartId);
 			_unitOfWork.ShoppingCart.Remove(cart);
 			_unitOfWork.Save();
+            //use for update session 
+            var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count;
+            HttpContext.Session.SetInt32(SD.SessionCart, count);
 			return RedirectToAction(nameof(Index));
 		}
 

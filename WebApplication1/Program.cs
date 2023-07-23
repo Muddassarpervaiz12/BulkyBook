@@ -32,6 +32,14 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = $"/Identity/Account/Logout";
     options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
 });
+//use for adding session into container  
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession( options =>
+    {
+        options.IdleTimeout = TimeSpan.FromMinutes(100);
+        options.Cookie.HttpOnly=true;
+        options.Cookie.IsEssential=true;
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -51,6 +59,8 @@ app.UseRouting();
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 app.UseAuthentication();
 app.UseAuthorization();
+//build in session has been configured (only support string and integer) but we can add custom objects in session
+app.UseSession();
 app.MapRazorPages(); //routing for pages
 app.MapControllerRoute( //routing for controller
     name: "default",

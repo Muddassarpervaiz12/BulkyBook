@@ -43,5 +43,8 @@ namespace WebApplication1.Utility
 		//if reject payment then status is rejected
 		public const string PaymentStatusRejected = "Rejected";
 
+		//add for session
+		public const string SessionCart = "SessionShoppingCart";
+
 	}
 }
