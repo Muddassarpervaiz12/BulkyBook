@@ -1,0 +1,80 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata.Ecma335;
+using System.Text;
+using System.Threading.Tasks;
+using WebApplication1.DataAcces;
+using WebApplication1.DataAccess.Repository.IRepository;
+using WebApplication1.Models;
+using WebApplication1.Utility;
+
+namespace WebApplication1.DataAccess.DbInitializer
+{
+    public class DbInitializer : IDbInitializer
+    {
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        //use dbcontext directly to connect with data base
+        private readonly ApplicationDbContext _db;
+
+
+        public DbInitializer(
+            UserManager<IdentityUser> userManager,
+            RoleManager<IdentityRole> roleManager,
+            ApplicationDbContext db)
+        {
+            _roleManager = roleManager;
+            _userManager = userManager;
+            _db = db;
+        }
+        //this method is called seeding into database
+        public void Initialize()
+        {
+            //migration if they are not applied
+            try
+            {
+                //means we have some migration in our migration folder but not applied into database
+                if(_db.Database.GetPendingMigrations().Count()>0)
+                {
+                    _db.Database.Migrate();
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+            //create roles if they are not created 
+
+            if (!_roleManager.RoleExistsAsync(SD.Role_Admin).GetAwaiter().GetResult())
+            {
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_Admin)).GetAwaiter().GetResult();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_Employee)).GetAwaiter().GetResult();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_User_Indi)).GetAwaiter().GetResult();
+                _roleManager.CreateAsync(new IdentityRole(SD.Role_User_Comp)).GetAwaiter().GetResult();
+
+                //if roles are not created, they we will create admin user as well
+                _userManager.CreateAsync(new ApplicationUser
+                {
+                    //this is the detail of admin we code and when intially code run this is the admin details
+                    UserName="muddassarpervaiz802@gmail.com",
+                    Email= "muddassarpervaiz802@gmail.com",
+                    Name="Muddassar Pervaiz",
+                    PhoneNumber="031659543",
+                    StreetAddress="Gujar Khan",
+                    State="Pakistan",
+                    PostalCode="1289",
+                    City="Gujar Khan",
+                }, "Admin_123*").GetAwaiter().GetResult();
+                ApplicationUser user = _db.ApplicationUsers.FirstOrDefault(u => u.Email 
+                == "muddassarpervaiz802@gmail.com");
+                //assign that user as admin role
+                _userManager.AddToRoleAsync(user,SD.Role_Admin).GetAwaiter().GetResult();
+            }
+            return;
+        }
+    }
+}

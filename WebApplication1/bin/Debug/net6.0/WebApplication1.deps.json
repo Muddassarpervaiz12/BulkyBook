@@ -3690,7 +3690,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.0-preview.2.23128.3",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.0-preview.2.23128.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0-preview.2.23128.3",
-          "WebApplication1.Models": "1.0.0"
+          "WebApplication1.Models": "1.0.0",
+          "WebApplication1.Utility": "1.0.0"
         },
         "runtime": {
           "WebApplication1.DataAccess.dll": {}

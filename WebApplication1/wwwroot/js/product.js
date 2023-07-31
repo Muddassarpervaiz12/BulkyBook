@@ -1,4 +1,5 @@
-﻿var dataTable;
+﻿//use var variable because its update and do not show error..
+var dataTable;
 $(document).ready(function () {
     loadDataTable();
 });
@@ -9,8 +10,11 @@ function loadDataTable() {
             "ajax": {
                 "url": "/Admin/Product/GetAll"
             },
+            //in column we have array and in that array we have different object in braces like title, isbn etc
             "columns": [
-                { "data": "title", "width": "15%" },
+                {//this is key value pairs
+                    "data": "title", "width": "15%"
+                },
                 { "data": "isbn", "width": "10%" },
                 { "data": "price", "width": "10%" },
                 { "data": "author", "width": "15%" },

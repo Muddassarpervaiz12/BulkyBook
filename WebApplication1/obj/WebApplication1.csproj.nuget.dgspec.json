@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj": {
                 "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Models\\WebApplication1.Models.csproj"
+              },
+              "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj": {
+                "projectPath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.Utility\\WebApplication1.Utility.csproj"
               }
             }
           }

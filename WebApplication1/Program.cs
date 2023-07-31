@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Stripe;
 using WebApplication1.DataAcces;
+using WebApplication1.DataAccess.DbInitializer;
 using WebApplication1.DataAccess.Repository;
 using WebApplication1.DataAccess.Repository.IRepository;
 using WebApplication1.Models;
@@ -21,8 +22,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(Options => Options.UseSqlSer
 //bind strip setting with application
 builder.Services.Configure<StripeSetting>(builder.Configuration.GetSection("Stripe"));
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultUI();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+//add dbinitializer for data seeding
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
 builder.Services.AddRazorPages();
 //facebook login 
@@ -64,6 +67,7 @@ app.UseRouting();
 //add stripe in pipeline
 //add global api key in pipeline so this work from program.cs to appsetting and then  webAppication1. utility and get string
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
+SeedDatabase();
 app.UseAuthentication();
 app.UseAuthorization();
 //build in session has been configured (only support string and integer) but we can add custom objects in session
@@ -74,3 +78,12 @@ app.MapControllerRoute( //routing for controller
     pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+void SeedDatabase()
+{
+    using (var scope=app.Services.CreateScope())
+    {
+        var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+        dbInitializer.Initialize();
+    }
+}

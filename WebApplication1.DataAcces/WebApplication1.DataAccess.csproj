@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebApplication1.Models\WebApplication1.Models.csproj" />
+    <ProjectReference Include="..\WebApplication1.Utility\WebApplication1.Utility.csproj" />
   </ItemGroup>
 
 </Project>

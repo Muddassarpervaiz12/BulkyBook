@@ -235,6 +235,8 @@ namespace WebApplication1.Areas.Customer.Controllers
             _emailSender.SendEmailAsync(orderHeader.ApplicationUser.Email, "New Order","<p>New Order Created</p>");
             //get the list of shoppingcart
             List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+            //session clear
+            HttpContext.Session.Clear();
             //After all of this we will clear over shopping cart
             //use removerang method to remove a collection
             _unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
