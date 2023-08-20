@@ -12,6 +12,8 @@ namespace WebApplication1.ViewComponents
         {
             _unitOfWork = unitOfWork;
         }
+        //this is use for check session id and then display on view/page in which display count
+        //so fo view we use shared folder/components and then shoppingCart folder 
         public async Task<IViewComponentResult> InvokeAsync()
         {
             //user log in or not first check that 

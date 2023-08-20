@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication1.Utility
 {
+    //sending email to user 
     public class EmailSender : IEmailSender
     {
         public string SendGridSecret { get; set; }
