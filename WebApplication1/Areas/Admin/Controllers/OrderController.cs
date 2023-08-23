@@ -86,7 +86,7 @@ namespace WebApplication1.Areas.Admin.Controllers
 			//in this we have session id and payment intent id so we save that ids into the unitofwork
 			Session session = service.Create(options);
 			///updatestripepaymentId is a method use in orderheaderrepository
-			_unitOfWork.OrderHeader.UpdateStripePaymentId(OrderVM.orderHeader.Id,
+			_unitOfWork.OrderHeader.UpdateStripePaymentID(OrderVM.orderHeader.Id,
 				session.Id, session.PaymentIntentId);
 			_unitOfWork.Save();
 			Response.Headers.Add("Location", session.Url);
@@ -107,7 +107,7 @@ namespace WebApplication1.Areas.Admin.Controllers
 				//check the stripe status
 				if (session.PaymentStatus.ToLower() == "paid")
 				{
-					_unitOfWork.OrderHeader.UpdateStripePaymentId(orderHeaderid, orderHeader.SessionId, session.PaymentIntentId);
+					_unitOfWork.OrderHeader.UpdateStripePaymentID(orderHeaderid, orderHeader.SessionId, session.PaymentIntentId);
 					//so only payment status is change and become approve
 					_unitOfWork.OrderHeader.UpdateStatus(orderHeaderid, orderHeader.OrderStatus, SD.PaymentStatusApproved);
 					_unitOfWork.Save();

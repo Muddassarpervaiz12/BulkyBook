@@ -12,13 +12,14 @@ namespace WebApplication1.DataAccess.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _db;
+        private readonly ApplicationDbContext _db;  
         internal DbSet<T> dbSet;
         public Repository(ApplicationDbContext db)
         {
             _db = db;
-            _db.products.Include(u => u.Catogery).Include(u => u.CoverType);
-            this.dbSet=_db.Set<T>();
+            //_db.shoppingCarts.Include(u => u.Product).ThenInclude(u => u.CoverType);
+            //_db.products.Include(u => u.Catogery).Include(u => u.CoverType);
+            this.dbSet = _db.Set<T>();
         }
 
         public void Add(T entity)
@@ -26,7 +27,7 @@ namespace WebApplication1.DataAccess.Repository
             dbSet.Add(entity);
         }
         //includeProp - "Catogery,CoverType"
-        public IEnumerable <T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
             //use if statement for filter null if do not use then send null and display error
@@ -34,30 +35,6 @@ namespace WebApplication1.DataAccess.Repository
             {
                 query = query.Where(filter);
             }
-            if (includeProperties!= null)
-            {
-                foreach(var includeProp in includeProperties.Split (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)) 
-                {
-                    query = query.Include(includeProp);
-                }
-            }
-            return query.ToList();
-        }
-
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = true)
-        {
-            IQueryable<T> query;
-            if(tracked)
-            {
-                query = dbSet;
-            }
-            else
-            {
-                //due to this we do not tracking entity anymore
-                query = dbSet.AsNoTracking();
-            }
-            
-            query=query.Where(filter);
             if (includeProperties != null)
             {
                 foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
@@ -65,7 +42,39 @@ namespace WebApplication1.DataAccess.Repository
                     query = query.Include(includeProp);
                 }
             }
-            return query.FirstOrDefault();
+            return query.ToList();
+        }
+
+        public T GetFirstOrDefault(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
+        {
+            if (tracked)
+            {
+                IQueryable<T> query = dbSet;
+
+                query = query.Where(filter);
+                if (includeProperties != null)
+                {
+                    foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        query = query.Include(includeProp);
+                    }
+                }
+                return query.FirstOrDefault();
+            }
+            else
+            {
+                IQueryable<T> query = dbSet.AsNoTracking();
+
+                query = query.Where(filter);
+                if (includeProperties != null)
+                {
+                    foreach (var includeProp in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        query = query.Include(includeProp);
+                    }
+                }
+                return query.FirstOrDefault();
+            }
         }
 
         public void Remove(T entity)

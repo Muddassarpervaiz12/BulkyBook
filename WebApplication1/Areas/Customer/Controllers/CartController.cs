@@ -129,7 +129,7 @@ namespace WebApplication1.Areas.Customer.Controllers
            // check either user is from company or individual
             if(applicationUser.CompanyId.GetValueOrDefault()== 0)
             {
-				//order status and payment status
+				//order status and payment status  (individual user)
 				ShoppingCartVM.OrderHeader.PaymentStatus = SD.PaymentStatusPending;
 				ShoppingCartVM.OrderHeader.OrderStatus = SD.StatusPending;
 			}
@@ -161,7 +161,7 @@ namespace WebApplication1.Areas.Customer.Controllers
                 _unitOfWork.Save();
 			}
             // check either user is company user or indivdual user
-            if (applicationUser.CompanyId.GetValueOrDefault() == null)
+            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
             {
                 //stripe setting
                 var domain = "https://localhost:44392/";
@@ -199,7 +199,7 @@ namespace WebApplication1.Areas.Customer.Controllers
                 //in this we have session id and payment intent id so we save that ids into the unitofwork
                 Session session = service.Create(options);
                 ///updatestripepaymentId is a method use in orderheaderrepository
-                _unitOfWork.OrderHeader.UpdateStripePaymentId(ShoppingCartVM.OrderHeader.Id,
+                _unitOfWork.OrderHeader.UpdateStripePaymentID(ShoppingCartVM.OrderHeader.Id,
                     session.Id, session.PaymentIntentId);
                 _unitOfWork.Save();
                 Response.Headers.Add("Location", session.Url);
@@ -226,7 +226,7 @@ namespace WebApplication1.Areas.Customer.Controllers
                 //check the stripe status
                 if (session.PaymentStatus.ToLower() == "paid")
                 {
-					_unitOfWork.OrderHeader.UpdateStripePaymentId(id, orderHeader.SessionId, session.PaymentIntentId);
+					_unitOfWork.OrderHeader.UpdateStripePaymentID(id, orderHeader.SessionId, session.PaymentIntentId);
 					_unitOfWork.OrderHeader.UpdateStatus(id, SD.StatusApproved, SD.PaymentStatusApproved);
                     _unitOfWork.Save();
                 }

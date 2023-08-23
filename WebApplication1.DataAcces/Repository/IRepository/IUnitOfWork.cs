@@ -13,7 +13,7 @@ namespace WebApplication1.DataAccess.Repository.IRepository
         ICategoryRepository Category { get;}
         ICompanyRepository Company { get;}
         IApplicationUserRepository ApplicationUser { get;}
-        IShoppinCartRepository ShoppingCart { get;}
+        IShoppingCartRepository ShoppingCart { get;}
 		IOrderHeaderRepository OrderHeader { get; }
 		IOrderDetailRepository OrderDetail { get; }
 		public void Save();

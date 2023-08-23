@@ -21,8 +21,16 @@
       "PackagePath": "staticwebassets\\images\\lawn_leaf.jpg"
     },
     {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\04f60488-eab2-4895-aa31-d041c530aa4b.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\04f60488-eab2-4895-aa31-d041c530aa4b.jpg"
+    },
+    {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\0c39c8ba-1bc1-4e98-9d42-45f429a590f1.jpg",
       "PackagePath": "staticwebassets\\images\\product\\0c39c8ba-1bc1-4e98-9d42-45f429a590f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\1969f6cb-c9c6-4b1c-9175-1f22fa3eea59.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\1969f6cb-c9c6-4b1c-9175-1f22fa3eea59.jpg"
     },
     {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\2ad22098-ca3d-433b-803c-217e74ea232f.png",
@@ -53,12 +61,24 @@
       "PackagePath": "staticwebassets\\images\\product\\5c794ea2-d0da-41b0-bef9-f1814b1281b6.png"
     },
     {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6af54373-0b92-4a9e-bb35-a53a7e65c996.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\6af54373-0b92-4a9e-bb35-a53a7e65c996.jpg"
+    },
+    {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6c30a75f-cea7-4941-b661-9197bdcf4e44.png",
       "PackagePath": "staticwebassets\\images\\product\\6c30a75f-cea7-4941-b661-9197bdcf4e44.png"
     },
     {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6f07b014-054d-4490-83a0-993b57cfda5b.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\6f07b014-054d-4490-83a0-993b57cfda5b.jpg"
+    },
+    {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\6f084134-ce22-4dbd-80dd-4ac4951bbc1e.jpg",
       "PackagePath": "staticwebassets\\images\\product\\6f084134-ce22-4dbd-80dd-4ac4951bbc1e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\75e1aecb-daab-4cdf-a95d-da9c1a5daa65.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\75e1aecb-daab-4cdf-a95d-da9c1a5daa65.jpg"
     },
     {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\98b9c5c7-ada3-4b34-bfa4-e0b1358bd51e.png",
@@ -71,6 +91,10 @@
     {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\c2063aef-da5d-4b39-a646-c1fde7033cbc.jpg",
       "PackagePath": "staticwebassets\\images\\product\\c2063aef-da5d-4b39-a646-c1fde7033cbc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\d28a5c60-c5a8-4b2a-9da7-785eeecd9446.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\d28a5c60-c5a8-4b2a-9da7-785eeecd9446.jpg"
     },
     {
       "Id": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\images\\product\\e9959de4-16a3-4e48-86c9-13292df99037.jpg",

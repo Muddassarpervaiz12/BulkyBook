@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IYmyCgFYMShLHWDKR2pbN9h1xNVhLZWqKpYVDQGwC9GfRPAwpC0i7TtEx+z6SWK8DPNg1P7sNLxx3duTZAbTbg==",
+  "dgSpecHash": "nzs7+Ye5yFVULMMxgZPjqJuS6Os5In6b0wrwAygEu6gfft9wsRaWRUupDQhTtUQUW7CsPqdlEumQeLUNaNvqmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Al-Rehman Computer\\source\\repos\\WebApplication1\\WebApplication1.DataAcces\\WebApplication1.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -179,7 +179,10 @@
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Al-Rehman Computer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512"
   ],
   "logs": []
 }

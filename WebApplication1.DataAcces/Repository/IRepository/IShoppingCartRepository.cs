@@ -7,7 +7,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.DataAccess.Repository.IRepository
 {
-    public interface IShoppinCartRepository : IRepository<ShoppingCart>
+    public interface IShoppingCartRepository : IRepository<ShoppingCart>
     { 
         int IncrementCount (ShoppingCart shoppingCart, int count);
         int DecrementCount (ShoppingCart shoppingCart, int count);

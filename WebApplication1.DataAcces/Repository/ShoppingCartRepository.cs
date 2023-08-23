@@ -10,7 +10,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.DataAccess.Repository
 {
-    public class ShoppingCartRepository : Repository<ShoppingCart>, IShoppinCartRepository
+    public class ShoppingCartRepository : Repository<ShoppingCart>, IShoppingCartRepository
     {
         private readonly ApplicationDbContext _db;
         public ShoppingCartRepository(ApplicationDbContext db) :base(db)

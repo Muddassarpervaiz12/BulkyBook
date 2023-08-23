@@ -6,11 +6,16 @@
     <div class="col-6 text-end">
             <a class="btn btn-success" asp-controller="Product" asp-action="Upsert"> <i class="bi bi-plus-circle"></i> &nbsp Add New Product</a>
     </div>
+    <br />  <br />
+        <div  class="text-end">
+        <button class="btn btn-info" onclick="window.print()">Print</button>
+        </div>
     </div>
 </div>
 <div class="container-xl">
     <table id="tblData" class="bg-gradient table table-hover table table-bordered table-stripp table-info">
         <thead class="table-dark">
+            <br />
         <tr >
                 <th style=" width: 15%">Title</th>
                 <th style=" width: 15%">ISBN</th> 
@@ -22,7 +27,6 @@
 
         </tr>
     </thead>
-        <button onclick="window.print()">Print this page</button>
 </table>
 </div>
 
