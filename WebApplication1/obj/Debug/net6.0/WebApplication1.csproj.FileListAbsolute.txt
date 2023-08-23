@@ -1128,3 +1128,4 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Deb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\SendGrid.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\StarkbankEcdsa.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.sourcelink.json

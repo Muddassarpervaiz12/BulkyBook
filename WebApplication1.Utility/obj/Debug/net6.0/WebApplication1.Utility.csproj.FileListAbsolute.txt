@@ -22,3 +22,4 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.Utility
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.Utility\obj\Debug\net6.0\refint\WebApplication1.Utility.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.Utility\obj\Debug\net6.0\WebApplication1.Utility.pdb
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.Utility\obj\Debug\net6.0\ref\WebApplication1.Utility.dll
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.Utility\obj\Debug\net6.0\WebApplication1.Utility.sourcelink.json

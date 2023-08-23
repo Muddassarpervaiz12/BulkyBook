@@ -34,3 +34,4 @@ C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.DataAcc
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\ref\WebApplication1.DataAccess.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.Utility.dll
 C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.DataAcces\bin\Debug\net6.0\WebApplication1.Utility.pdb
+C:\Users\Al-Rehman Computer\source\repos\WebApplication1\WebApplication1.DataAcces\obj\Debug\net6.0\WebApplication1.DataAccess.sourcelink.json
